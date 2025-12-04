@@ -1,7 +1,18 @@
 import { Tokenizer } from "./Lexer.ts";
+import path from "path";
+import { readFileSync } from "fs";
 
-const tokenizer = new Tokenizer({
+const fileDirectory = path.join("res", "test.yamlscript");
+
+const readFileOptions = {
+  encoding: "utf-8",
+} as const;
+
+const source = readFileSync(fileDirectory, readFileOptions);
+
+const tokenizer = new Tokenizer(source, {
   verbose: true,
 });
 
-tokenizer.tokenize("Test");
+const tokens = tokenizer.tokenize(source);
+console.log(tokens);
