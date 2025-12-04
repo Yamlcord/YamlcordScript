@@ -1,0 +1,20 @@
+{
+  "name": "yamlcord-script",
+  "version": "0.0.1",
+  "description": "Ενα απλό scripting language.",
+  "homepage": "https://github.com/Yamlcord/YamlcordScript#readme",
+  "bugs": {
+    "url": "https://github.com/Yamlcord/YamlcordScript/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yamlcord/YamlcordScript.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
