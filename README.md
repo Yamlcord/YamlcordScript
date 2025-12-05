@@ -5,6 +5,15 @@ Develop the core scripting language for Yamlcord, including lexer, parser and AS
 
 ---
 
+## 🤝 Contributing
+
+Want to help improve the project?  
+Please read our full contribution guide here:
+
+👉 [CONTRIBUTING.md](CONTRIBUTING.md)
+
+---
+
 ## Tasks
 
 ### 1. Lexer
