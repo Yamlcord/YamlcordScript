@@ -14,5 +14,5 @@ const tokenizer = new Tokenizer(source, {
   verbose: true,
 });
 
-const tokens = tokenizer.tokenize(source);
+const tokens = tokenizer.tokenize();
 console.log(tokens);

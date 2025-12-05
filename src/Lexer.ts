@@ -45,6 +45,10 @@ class Token {
     this.line = line;
   }
 
+  public getType(): TokenType {
+    return this.type;
+  }
+
   public toString(): string {
     return this.type + " " + this.lexeme + " " + this.literal;
   }
@@ -60,7 +64,10 @@ export class Tokenizer {
   private readonly source: string;
   private readonly sourceLength: number;
 
-  public constructor(source: string, options: TokenizerOptions) {
+  public constructor(
+    source: string,
+    options: TokenizerOptions = { verbose: false },
+  ) {
     this.options = options;
     this.source = source;
     this.sourceLength = source.length;
